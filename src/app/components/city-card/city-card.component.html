@@ -1,0 +1,31 @@
+<div class="card-header">
+    <div class="title">{{city.name}}</div>
+    <img class="city-img" src="{{city.url}}"
+         alt="city-image">
+</div>
+
+<div class="current-temp">{{city.temperature}} <span>°C</span></div>
+<div class="current-temp-desc">{{city.description}}</div>
+<div class="icon">
+    <img class="weather-icon" src="../../assets/{{city.icon}}.svg" alt="weather-icon"/>
+</div>
+
+<div class="feels-like">
+    <div class="feels-like-text">feels like</div>
+    <div class="feels-like-temp">
+        {{city.feelsLike}}
+        <span>°C</span>
+    </div>
+</div>
+
+<div class="margins">
+    <div>
+        <span>min</span>
+        <span>{{city.min}} °C</span>
+    </div>
+
+    <div>
+        <span>max</span>
+        <span>{{city.max}} °C</span>
+    </div>
+</div>
