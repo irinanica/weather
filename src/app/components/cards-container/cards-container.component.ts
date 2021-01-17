@@ -37,7 +37,7 @@ export class CardsContainerComponent implements OnInit, OnDestroy {
     }
 
     public selectCity(event: any): void {
-        this.weatherService.getWeather(event.option.value.toLowerCase())
+        this.weatherService.getWeather(event.option.value)
             .pipe(
                 takeUntil(this.unsubscribeAll)
             )
